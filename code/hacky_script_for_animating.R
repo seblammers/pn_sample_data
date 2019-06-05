@@ -99,7 +99,7 @@ gait_01_renamed <- gait_01 %>%
     "RSX" = right_shoulder_x_x,
     "RSZ" = right_shoulder_x_y,
     "RSY" = right_shoulder_x_z*-1,
-    "REX" = (right_forearm_x_x    + right_arm_x_x)/2,
+    "REX" = (right_forearm_x_x    + right_arm_x_x)/2, #An attempt to create the elbow joint center by averaging the forearm and arm coordinates
     "REZ" = (right_forearm_x_y    + right_arm_x_y)/2,
     "REY" = (right_forearm_x_z*-1 + right_arm_x_z*-1)/2,
     "RWX" = right_hand_x_x,
@@ -117,7 +117,7 @@ gait_01_renamed <- gait_01 %>%
     "LSX" = left_shoulder_x_x, 
     "LSZ" = left_shoulder_x_y,
     "LSY" = left_shoulder_x_z*-1,
-    "LEX" = (left_forearm_x_x    + left_arm_x_x)/2,
+    "LEX" = (left_forearm_x_x    + left_arm_x_x)/2, #An attempt to create the elbow joint center by averaging the forearm and arm coordinates
     "LEZ" = (left_forearm_x_y    + left_arm_x_y)/2,
     "LEY" = (left_forearm_x_z*-1 + left_arm_x_z*-1)/2,
     "LWX" = left_hand_x_x,
